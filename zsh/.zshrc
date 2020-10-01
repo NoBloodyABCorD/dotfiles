@@ -9,7 +9,7 @@ export ZSH="/data/data/com.termux/files/home/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME=random
+ZSH_THEME="powerline"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -69,7 +69,7 @@ ZSH_THEME=random
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git battery tmux rand-quote chucknorris)
+plugins=(git battery tmux rand-quote)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,5 +96,12 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="source ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Alias for weather
+alias weather-small="curl wttr.in/?format=4"
+alias weather="curl wttr.in/?1"
+alias weather-home="curl wttr.in/49849?1"
+alias weather-home-small="curl wttr.in/Ishpeming?format=4"
+
